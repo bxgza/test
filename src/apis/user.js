@@ -14,6 +14,7 @@ export const getUserInfoAPI=()=>{
 }
 
 export const updateUserInfoAPI=({id,nickname,email})=>{
+  console.log("用户信息：",id,nickname,email)
   return request.put('/my/userinfo',{id,nickname,email})
 }
 //更新用户头像
